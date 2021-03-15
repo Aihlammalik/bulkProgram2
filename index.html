@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <title>Assignemnt 16</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sm-0 col-sm-0"></div>
+        <div class="col-lg-6 col-sm-12 col-sm-12">
+            <!--program 1-->
+            <!--Write a js program to check whether a character is uppercase or lowercase alphabet.-->
+            <h1>Check wether a character is in uppercase or in lowercase</h1>
+            <label for="program1"><b>Enter Characters:</b></label><br>
+           
+            <input type="text" id="inputULcase"><br>
+
+            <button onclick="checkCase()">Enter</button>
+ 
+ <!--program 2-->
+            <!--Write a js program to input Week number and print week day.-->
+            <h1>Check wether a input Week number and print week day</h1>
+            <label for="program2"><b>Enter WEEK number:</b></label><br>
+            <p id="outputWeekNumber"></p>
+            <input type="number" id="inputWeekNumber"><br>
+
+            <button onclick="weekNum()">Enter</button>
+ 
+
+            <!--program 3-->
+            <!--Write a js program to input month number and print number of days in that month.-->
+            <h1>program to input month number and print number of days in that month</h1>
+            <label for="program3"><b>Enter Month number:</b></label><br>
+            <p id="outputMonthNumber"></p>
+            <input type="number" id="inputMonthNumber"><br>
+
+            <button onclick="monthNum()">Enter</button>
+
+            <!--program 4-->
+            <!-- Write a js program to input angles of a triangle and check whether triangle is valid or not.-->
+            <h1>program to input angles of a triangle and check whether triangle is valid or not</h1>
+            <label for="program4"><b>Enter Angles:</b></label><br>
+            <p id="outputAngleTriangle"></p>
+            <input type="number" id="inputAngleTriangle1" placeholder="enter 1st angle"><br>
+            <input type="number" id="inputAngleTriangle2" placeholder="enter 2nd angle"><br>
+            <input type="number" id="inputAngleTriangle3" placeholder="enter 3rd angle"><br>
+
+            <button onclick="triangleValidity()">Enter</button>
+
+<!--program 5-->
+            <!--Write a js program to input all sides of a triangle and check whether triangle is valid or not.-->
+            <h1>program to input all sides of a triangle and check whether triangle is valid or not.</h1>
+            <label for="program5"><b>Enter Sides:</b></label><br>
+            <p id="outputSideTriangle"></p>
+            <input type="number" id="inputSideTriangle1" placeholder="enter 1st sides"><br>
+            <input type="number" id="inputSideTriangle2" placeholder="enter 2nd sides"><br>
+            <input type="number" id="inputSideTriangle3" placeholder="enter 3rd side"><br>
+
+            <button onclick="triangleValidity1()">Enter</button>
+
+<!--program 6-->
+            <!--Write a js program to check whether the triangle is equilateral, isosceles or scalene triangle.-->
+            <h1> program to check whether the triangle is equilateral, isosceles or scalene triangle.</h1>
+            <label for="program6"><b>Enter Sides:</b></label><br>
+            <p id="outputTypeTriangles"></p>
+            <input type="number" id="inputSideTriangles1" placeholder="enter 1st sides"><br>
+            <input type="number" id="inputSideTriangles2" placeholder="enter 2nd sides"><br>
+            <input type="number" id="inputSideTriangles3" placeholder="enter 3rd side"><br>
+            <label for="program6"><b>Enter Angles:</b></label><br>
+            <input type="number" id="inputAngleTriangles4" placeholder="enter 1st angle"><br>
+            <input type="number" id="inputAngleTriangles5" placeholder="enter 2nd angle"><br>
+            <input type="number" id="inputAngleTriangles6" placeholder="enter 3rd angle"><br>
+
+            <button onclick="typeOfTriangle()">Enter</button>
+
+<!--program 7-->
+            <!--Write a js program to find all roots of a quadratic equation.-->
+            <h1>program to find all roots of a quadratic equation.</h1>
+            <label for="program7"><b>Enter Required co-efficient of x and constant :</b></label><br>
+            <p id="outputQuardratic"></p>
+            <input type="number" id="inputQuardratica" placeholder="enter co-efficient of x2"><br>
+            <input type="number" id="inputQuardraticb" placeholder="enter co-efficient of x"><br>
+            <input type="number" id="inputQuardraticc" placeholder="enter constant term"><br>
+            <button onclick="rootsCalculator()">Enter</button>
+
+            
+        <!--program 8-->
+            <!--Write a js program to calculate profit or loss.-->
+            <h1>program to calculate profit or loss.</h1>
+            <label for="program8"><b>Enter Revenue and total expences of your business :</b></label><br>
+            <p id="outputProfitLoss"></p>
+            <input type="number" id="inputRevenue" placeholder="enter Total revenue"><br>
+            <input type="number" id="inputExpence" placeholder="enter  Total Expences"><br>
+            
+            <button onclick="calculateProfitLoss()">Enter</button>
+
+            <!--program 9-->
+            <!--Write a js program to search all occurrences of a character in given string.-->
+            <h1> program to search all occurrences of a character in given string.</h1>
+            <label for="program9"><b>Enter Sting:</b></label><br>
+            <p id="outputAllOccurence"></p>
+            <input type="text" id="inputAllOccurence" placeholder="enter string"><br>
+           
+            
+            <button onclick="allOccurence()">Enter</button>
+
+<!--program 10-->
+            <!--Write a js program to count occurrences of a character in given string.-->
+            <h1>program to count occurrences of a character in given string.</h1>
+            <label for="program10"><b>Enter Sting:</b></label><br>
+            <p id="outputCountOccurence"></p>
+            <input type="text" id="inputCountOccurence" placeholder="enter string"><br>
+            <label for="program10"><b>Enter Character of what u want to search:</b></label><br>
+            <input type="text" id="inputCharacter" placeholder="enter Character"><br>
+
+           
+            
+            <button onclick="countOccurenceOfCharacter()">Enter</button>
+
+<!--program 11-->
+            <!--Write a js program to find highest frequency character in a string.
+            <h1>Write a js program to find highest frequency character in a string.</h1>
+            <label for="program10"><b>Enter Sting:</b></label><br>
+            <p id="outputHighFrequency"></p>
+            <input type="text" id="inputHighFrequency" placeholder="enter string"><br>
+            <button onclick="countOccurenceOfCharacter()">Enter</button>-->
+<!--program 12-->
+            <!---Write a js program to remove first occurrence of a character from string-->
+            <h1>Write a js program to remove first occurrence of a character from string.</h1>
+            <label for="program11"><b>Enter Sting:</b></label><br>
+            <p id="outputRemoveFirst"></p>
+            <input type="text" id="inputRemoveFirst" placeholder="enter string"><br>
+            <input type="text" id="inputRemoveFirstIndex" placeholder="enter string"><br>
+
+            <button onclick="removeFirstOccurence()">Enter</button>
+
+
+            <!--program 13-->
+            <!---Write a js program to remove all occurrences of a character from string.
+            <h1>Write a js program to remove all occurrences of a character from string..</h1>
+            <label for="program13"><b>Enter Sting:</b></label><br>
+            <p id="outputRemoveAllOccurence"></p>
+            <input type="text" id="inputRemoveAllOccurence" placeholder="enter string"><br>
+            <input type="text" id="inputCharacterToRemove" placeholder="enter string"><br>
+
+            <button onclick="removeAllOccurence()">Enter</button>-->
+
+            <!--program 14-->
+            <!---Write a js program to replace first occurrence of a character with another in a string.-->
+            <h1>Write a js program to replace first occurrence of a character with another in a string.</h1>
+            <label for="program11"><b>Enter Sting:</b></label><br>
+            <p id="outputReplaceFirst"></p>
+            <input type="text" id="inputReplaceFirstString" placeholder="enter string"><br>
+            <input type="text" id="TheWordYouWantToReplace" placeholder=" word you want to replace"><br>
+            <input type="text" id="TheWordYouWantToReplaceWith" placeholder="word you want to replace with"><br>
+
+            <button onclick=" replaceFirstOccurence ()">Enter</button>
+
+             <!--program 15-->
+            <!---Write a js program to merge two array to third array.-->
+            <h1>Write a js program to merge two array to third array.</h1>
+            <label for="program12"><b>Enter Arrays:</b></label><br>
+            <p id="outputArrayMerge"></p>
+            <input type="text" id="inputArray1" placeholder="enter Array by commas"><br>
+            <input type="text" id="inputArray2" placeholder="enter Array by commas"><br>
+          
+            <button onclick="mergeArrays() ">Enter</button>
+
+             <!--program 16-->
+            <!---Write a js program to find reverse of an array.-->
+            <h1>Write a js program to find reverse of an array.</h1>
+            <label for="program13"><b>Enter Arrays:</b></label><br>
+            <p id="outputArrayReverse"></p>
+            <input type="text" id="inputArrayReverse" placeholder="enter Array by commas"><br>
+            <button onclick="arrayReverse()">Enter</button>
+
+            <!--program 17-->
+            <!---Write a js program to put even and odd elements of array in two separate array.-->
+            <h1>Write a js program to put even and odd elements of array in two separate array.</h1>
+            <label for="program14"><b>Enter Arrays:</b></label><br>
+            <p id="outputOddEven"></p>
+            <input type="text" id="inputOddEven" placeholder="enter Array by commas"><br>
+            <button onclick="arrayOddEven()">Enter</button>
+
+            <!--program 18-->
+            <!---Write a js program to search an element in an array.-->
+            <h1>Write a js program to search an element in an array.</h1>
+            <label for="program15"><b>Enter Arrays:</b></label><br>
+            <p id="outputSearch"></p>
+            <input type="text" id="inputSearch" placeholder="enter Array by commas"><br>
+            <input type="text" id="inputSearchElement" placeholder="enter Element you want to search"><br>
+
+            <button onclick="">Enter</button>
+        </div>
+        
+        <div class="col-lg-3 col-sm-0 col-sm-0"></div>
+    </div>
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
