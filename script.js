@@ -374,5 +374,106 @@ function arrayOddEven() {
 //program 17
 //Write a js program to search an element in an array.
 function searchElement () {
-    var inputSearch = document
+    var inputSearch = document.getElementById("inputSearch").value.split(",");
+    var inputElementToSearch = document.getElementById("inputSearchElement").value;
+    var searchElement = inputSearch.indexOf(inputElementToSearch);
+    var outoutSearchElement = document.getElementById("outputSearch");
+    outoutSearchElement.innerHTML = `In array [${inputSearch}] the Element "${inputElementToSearch}" occurs at the index ${searchElement}`
+  console.log(searchElement);
+}
+
+
+
+//program 18
+//Write a js program to sort array elements in ascending or descending order.
+
+function sortInAscendind() {
+    var inputAscendingDescending =[parseInt( document.getElementById("inputAsceendingDescending").value.split(","))];
+    var resultInAscendinOrder = [];
+    var resultInDescendingOrder = [];
+    
+    
+   // for (let index = 0; index < inputAscendingDescending.length; index++) {
+   //     if (inputAscendingDescending[index] <= inputAscendingDescending[index + 1]) {
+    //        resultInAscendinOrder.push(inputAscendingDescending[index]);
+    //    }
+   //    else if (inputAscendingDescending[index] >= inputAscendingDescending[index + 1]) {
+    //    resultInDescendingOrder.push(inputAscendingDescending[index]);
+    //    }    
+   // }
+  //  console.log("resultInAscendinOrder",resultInAscendinOrder);
+  //  console.log("resultInDescendingOrder",resultInDescendingOrder);
+
+
+}
+
+
+//program 19
+//Write a js program to sort even and odd elements of array separately.
+
+function sortEvenOdd() {
+    var inputSortEvenOdd = document.getElementById("inputSortEvenOdd").value.split(",");
+    var outputSortEvenOdd = document.getElementById("outputSortEvenOdd");
+    var arrayEven = [];
+    var arrayOdd = [];
+for (let index = 0; index < inputSortEvenOdd.length; index++) {
+    if (inputSortEvenOdd[index] % 2 == 0) {
+        arrayEven.push(inputSortEvenOdd[index])
+    }
+    else if (inputSortEvenOdd[index] % 2 !== 0) {
+        arrayOdd.push(inputSortEvenOdd[index])
+    }
+}
+outputSortEvenOdd.innerHTML = `In given array [${inputSortEvenOdd}] the Array of even numbers is [${arrayEven}] and Array of odd numbers is [${arrayOdd}]`  
+
+}
+
+//prgram 20
+//write a js program to find sum of all natural numbers between 1 to n.
+function sumOfNaturalNum() {
+    var inputNaturalNum =parseInt(document.getElementById("inputSumOfNatural").value);
+    var outputNaturalNum = document.getElementById("outputSumOfNatural");
+    var sum = 0 ;
+    for (let i = 1; i <= inputNaturalNum; i++) {
+        sum += i ;  
+    } 
+    outputNaturalNum.innerHTML = `The sum of first ${inputNaturalNum} is ${sum}`
+}
+
+//program 21
+// Write a js program to find sum of all even numbers between 1 to n.
+
+function sumOfEvenNum() {
+    var inputSumOFEven =parseInt(document.getElementById("inputSumOfEven").value) ;
+   var sum = 0 ;
+   for (let i = 2; i <= inputSumOFEven; i = i + 2) {     
+       sum  += i ;
+      
+   }
+console.log(sum);
+}
+
+//program 22
+//Write a js program to print multiplication table of any number.
+
+function table() {
+    var inputTable = parseInt(document.getElementById("inputTable").value) ;
+    var outputTable = document.getElementById("outputTable");
+    console.log(`The multiplication table of ${inputTable} is`); 
+    for (let i = 1; i <= 10 ; i++) {
+        var resultTable = inputTable *  i ;
+         
+       console.log(` ${inputTable} * ${i} = ${resultTable}`);   
+    }
+    
+}
+
+//program 23
+//Write a js program to count number of digits in a number.
+
+function countDigit() {
+    var inputDigit = document.getElementById("inputCountDigit").value;
+    var outputDigit = document.getElementById("outputCountDigit");
+    var length = inputDigit.length ;
+    outputDigit.innerHTML = `The number ${inputDigit} contains ${length} digits`
 }
